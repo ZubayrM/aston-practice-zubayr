@@ -25,23 +25,6 @@ public class DBTemplate {
     }
 
 
-//    static {
-//        final String url = "jdbc:postgresql://localhost:5432/postgres";;
-//        final String user = "postgres";
-//        final String pass = "postgres";
-//        try {
-//            connection = DriverManager.getConnection(url, user, pass);
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//        }
-//        try {
-//            statement = connection.createStatement();
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//        }
-//    }
-
-
     public void createTable() throws SQLException {
         statement.executeUpdate("create table Skill (id integer, name varchar(20), primary key (id)) ");
         statement.executeUpdate("insert into Skill values (1, 'java core')");
